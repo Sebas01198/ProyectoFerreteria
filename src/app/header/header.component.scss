@@ -1,0 +1,41 @@
+header{
+    width: 100%;
+    background-color: #2046F5;
+    padding: 30px 0px;
+    color: #fff;
+
+  .head{
+      display: flex;
+      justify-content: space-between;
+
+      .navegacion{
+          display: flex;
+
+          align-items: center;
+
+
+          nav{
+              display: flex;
+
+              li{
+                  margin: 0px 30px;
+
+                  a{
+                    color: #fff;
+                    font-size: 18px;
+                  }
+              }
+          }
+      }
+
+
+      .carrito{
+
+        i{
+            font-size: 25px;
+            cursor: pointer;
+        }
+      }
+
+  }
+}

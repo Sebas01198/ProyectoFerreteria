@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+//Variables
+$azul: #4363F5;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        border-bottom: 4px solid #fff;
+    }
+
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
