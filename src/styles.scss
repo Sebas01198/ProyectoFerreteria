@@ -9,6 +9,10 @@ $azul: #4363F5;
 body{
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
 a{
     text-decoration: none;
     &:hover{
