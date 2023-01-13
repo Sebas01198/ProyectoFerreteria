@@ -1,17 +1,21 @@
 <header>
     <div class="head contenedor">
-        <p>Logo</p>
+      <div class="logo">
+        <p>Ferreteria</p>
+        <span>Sión</span>
+      </div>
+
         <div class="navegacion">
             <nav>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="#productos" >Productos</a></li>
+                <li><a routerLink="/">Inicio</a></li>
+                <li><a routerLink="/about">Quienes somos</a></li>
+                <li><a routerLink="/productos">Productos</a></li>
                 <li><a href="">Contacto</a></li>
             </nav>
 
         </div>
         <div class="carrito">
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          <i routerLink="/carrito" class="fa-sharp fa-solid fa-cart-shopping"></i>
         </div>
     </div>
 </header>

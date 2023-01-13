@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  background-color: #274beb;
+  padding: 30px 0px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+}
+header .head .navegacion {
+  display: flex;
+  align-items: center;
+}
+header .head .navegacion nav {
+  display: flex;
+}
+header .head .navegacion nav li {
+  margin: 0px 30px;
+}
+header .head .navegacion nav li a {
+  color: #fff;
+  font-size: 18px;
+}
+header .head .carrito i {
+  font-size: 25px;
+  cursor: pointer;
+}/*# sourceMappingURL=header.component.css.map */

@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    background-color: transparent;
+    background-color: #274beb;
     padding: 30px 0px;
     color: #fff;
     position: fixed;
@@ -10,7 +10,19 @@ header{
   .head{
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
+      .logo{
+        position: relative;
+        p{
+          font-size: 20px;
+        }
+        span{
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
       .navegacion{
           display: flex;
 

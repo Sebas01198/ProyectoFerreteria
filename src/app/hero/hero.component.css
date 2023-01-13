@@ -1,0 +1,34 @@
+.hero {
+  background-image: url("/assets/img/hero.jpg");
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero .hero-contenido {
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.hero .hero-contenido h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.hero .hero-contenido p {
+  font-size: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=hero.component.css.map */

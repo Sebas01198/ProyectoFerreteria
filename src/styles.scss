@@ -1,5 +1,5 @@
 //Variables
-$azul: #4363F5;
+$azul: #274beb;
 
 *{
     padding: 0;
@@ -11,7 +11,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 100px;
 }
 a{
     text-decoration: none;
@@ -19,6 +19,11 @@ a{
         border-bottom: 4px solid #fff;
     }
 
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 ul{
     list-style: none;
@@ -32,3 +37,4 @@ li{
     max-width: 1200px;
     margin: 0 auto;
 }
+

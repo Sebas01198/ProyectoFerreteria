@@ -1,0 +1,69 @@
+<!-- <section  class= "productos contenedor">
+  <div *ngFor="let item of items">
+    <div class="items-products">
+      <img src="../assets/img-productos/{{item.imagen}}" alt="">
+      <p>{{item.nombre}}</p>
+      <p>{{item.precio}}</p>
+      <p>{{item.cantidad}}</p>
+      <a routerLink = '/'><i class="fa-solid fa-trash"></i></a>
+    </div>
+
+  </div>
+</section> -->
+
+<ng-container *ngIf="items.length != 0" >
+  <div class="card-table productos contenedor">
+    <div class="cart-product">
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>Nombre producto</th>
+            <th>imagen producto</th>
+            <th>Description</th>
+            <th>precio</th>
+            <th>cantidad</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of items; let i = index">
+          <tr>
+            <td>{{i + 1}}</td>
+            <td>{{item.nombre}}</td>
+            <td><img src="assets/img-productos/{{item.imagen}}" alt="" width="100"></td>
+            <td>{{item.descripcion}}</td>
+            <td>{{item.precio}}</td>
+            <td>{{item.cantidad}}</td>
+            <td>
+              <button (click)="eliminarProductoCard(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+
+
+        </tbody>
+
+
+      </table>
+      <tr>
+        <td colspan="4"></td>
+        <td><button (click)="eliminarTodo()" class="btn btn-danger">Vaciar carrito</button></td>
+        <td><button style="margin-left: 10px;" class="btn btn-primary"><i style="margin-right: 5px;" class="fa-brands fa-whatsapp"></i>Comprar</button></td>
+      </tr>
+    </div>
+  </div>
+
+
+</ng-container>
+
+<ng-container *ngIf="items.length < 1">
+  <div class="container contenedor productos">
+    <div class="card">
+      <h5 class="card-title">My cart</h5>
+    </div>
+    <div class="center">
+      <img src="" alt="">
+      <h4>Tu carrito esta vacio</h4>
+      <h6>Agrega un producto</h6>
+      <button routerLink="/productos" class="btn btn-primary">Ir a tienda</button>
+    </div>
+  </div>
+</ng-container>
